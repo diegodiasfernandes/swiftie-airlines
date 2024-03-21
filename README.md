@@ -29,3 +29,9 @@ To log-in as user you will have to sign up using name, cpf and a password (this 
 
 ### Accessing Admin Interface
 Just use "admin" at cpf and password textfield!
+
+## Best 2nd semester trio JavaFx Interface you will see :P
+Some ilustrative photos and nice colors to make your view easier
+
+![image](https://github.com/diegodiasfernandes/swiftie-airlines/assets/116195231/b3bfa36e-cf80-4cb7-8413-d26fbb76a48c)
+
