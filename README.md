@@ -10,8 +10,14 @@ You will have to install this version of javafx, other than that you should be o
 javafx-sdk-21.0.2
 ```
 
-## User Interface
+## Interface Guide
+
+## Accessing User Interface
 To log-in as user you will have to sign up using name, cpf and a password (this will be saved as txt file)
 
 
 ![image](https://github.com/diegodiasfernandes/swiftie-airlines/assets/116195231/e01760ef-363f-46a6-9346-660d5684cbb7)
+
+
+## Accessing Admin Interface
+Just use "admin" at cpf and password textfield!
