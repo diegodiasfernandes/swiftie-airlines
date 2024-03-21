@@ -30,6 +30,12 @@ To log-in as user you will have to sign up using name, cpf and a password (this 
 ### Accessing Admin Interface
 Just use "admin" at cpf and password textfield!
 
+### Easy interface to add, edit delete flight informations
+Some stuff from the airport.txt will be automatically set to the Airport ComboBoxes
+
+![image](https://github.com/diegodiasfernandes/swiftie-airlines/assets/116195231/0a80f675-dfa4-4772-85bd-b1cbed4e3150)
+
+
 ## Best 2nd semester trio JavaFx Interface you will see :P
 Some ilustrative photos and nice colors to make your view easier
 
