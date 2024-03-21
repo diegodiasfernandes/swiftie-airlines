@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="651.0" style="-fx-background-color: #27124B;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupController">
+   <children>
+      <ImageView fitHeight="423.0" fitWidth="261.0" layoutX="23.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/logologin.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="281.0" layoutY="-8.0" prefHeight="546.0" prefWidth="369.0" style="-fx-background-color: #FAC831; -fx-effect: dropshadow(gaussian, rgba(5, 0, 0, 5), 12, 0, 0, 5);">
+         <children>
+            <TextField fx:id="passwordTextField" layoutX="73.0" layoutY="348.0" prefHeight="25.0" prefWidth="218.0" style="-fx-background-radius: 5; -fx-border-color: #7F63D8; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);" />
+            <TextField fx:id="CPFTextField" layoutX="73.0" layoutY="266.0" prefHeight="25.0" prefWidth="218.0" style="-fx-background-radius: 5; -fx-border-color: #7F63D8; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);" />
+            <Button fx:id="signUpButton" layoutX="74.0" layoutY="415.0" mnemonicParsing="false" onAction="#signup" prefHeight="33.0" prefWidth="218.0" style="-fx-background-radius: 5; -fx-background-color: #7F63D8; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);" styleClass="buttonCadSalvar" stylesheets="@../StyleSheets/style.css" text="Sign Up" />
+            <Label layoutX="75.0" layoutY="248.0" text="CPF" textFill="#656161">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="74.0" layoutY="330.0" prefHeight="17.0" prefWidth="99.0" text="Password" textFill="#656161">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField layoutX="112.0" layoutY="419.0" prefHeight="18.0" prefWidth="141.0" visible="false" />
+            <Text fill="WHITE" layoutX="59.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="258.40234375">
+               <font>
+                  <Font name="Segoe UI Emoji" size="71.0" />
+               </font>
+            </Text>
+            <TextField fx:id="NameTextField" layoutX="74.0" layoutY="179.0" prefHeight="25.0" prefWidth="218.0" style="-fx-background-radius: 5; -fx-border-color: #7F63D8; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 4);" />
+            <Label layoutX="75.0" layoutY="161.0" prefHeight="17.0" prefWidth="43.0" text="Name" textFill="#656161">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Text fx:id="nameAlert" fill="RED" layoutX="65.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="237.9375">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="CPFAlert" fill="RED" layoutX="67.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="237.9375">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordAlert" fill="RED" layoutX="66.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="237.9375">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="switchToLoginButton" layoutX="151.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToLogIn" prefHeight="34.0" prefWidth="68.0" text="Login" />
+            <Label layoutX="113.0" layoutY="472.0" prefHeight="18.0" prefWidth="150.0" text="Don't have an account yet?" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

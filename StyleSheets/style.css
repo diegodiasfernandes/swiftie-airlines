@@ -1,0 +1,118 @@
+
+.button {/* botão menu*/
+    -fx-background-color:#ffffff;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+
+  }
+  .button:hover { /* passar o mouse*/
+    -fx-background-color:#FFEB5B ;
+    -fx-text-fill: #000000;
+  }
+
+  .button:pressed { /*pressionar o botão */
+    -fx-background-color: #FAC831;
+    -fx-text-fill:#27124B;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 4), 8, 0, 0, 2);
+  }
+
+  .buttonFlights{
+    -fx-background-color:#FFEB5B;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+  }
+  .buttonFlightList{
+    -fx-background-color:#FFEB5B;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+  }
+  .buttonclickMenu{
+    -fx-background-color:#FFEB5B;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+  }
+
+.aviao{
+  -fx-background-color: #9c9e9b;
+  -fx-border-color:#000000
+  
+  }
+
+  .blocoCad{
+    -fx-background-color: #ded7f8;
+    -fx-background-radius: 8px;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 5), 5, 0, 0, 2);
+
+  }
+.buttonCadExcluir{
+  -fx-background-color:#fc2e2e;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+}
+
+.buttonCadExcluir:hover { /* passar o mouse*/
+  -fx-background-color:#aa0202 ;
+  -fx-text-fill: #ffffff;
+}
+
+.buttonCadSalvar{
+  -fx-background-color:#2efc73;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+}
+
+.buttonCadSalvar:hover { /* passar o mouse*/
+  -fx-background-color:#02aa2c ;
+  -fx-text-fill: #ffffff;
+}
+
+.buttonCadEditar{
+  -fx-background-color:#afc0c2;
+    -fx-border-vidth: 2px 2px 2px 2px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-border-style:solid;
+    -fx-border-color:#ffffff;
+}
+
+.buttonCadEditar:hover { /* passar o mouse*/
+  -fx-background-color:#383a38 ;
+  -fx-text-fill: #ffffff;
+}
+
+.table-view{
+  -fx-background-color: transparent;
+  -fx-border-radius: 0px 0px 2px 2px;
+  -fx-background-radius: 2px;
+  -fx-border-color: linear-gradient(to bottom right, #27124B, #27124B )
+}
+.table-view .column-header, filter{
+  -fx-background-color: #27124B ;
+  -fx-size: 50px;
+  
+}
+
+.table-view .column-header .label{
+  -fx-text-fill: #fff;
+  -fx-size: 50px;
+}

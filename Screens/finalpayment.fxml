@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #EBE6E6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FinalPaymentController">
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="180.0" style="-fx-background-color: #27124B; -fx-effect: dropshadow(gaussian, rgba(5, 0, 0, 5), 12, 0, 0, 5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox fx:id="home_side_menu" layoutY="67.0" prefHeight="700.0" prefWidth="200.0" spacing="20.0" style="-fx-padding: 10px;" stylesheets="@../StyleSheets/Style.css" AnchorPane.topAnchor="67.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" translateX="18.0">
+                     <image>
+                        <Image url="@../imagens/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="button1" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonclickMenu" stylesheets="@../StyleSheets/Style.css" text="Buy Ticket" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="41.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/Buy%20Ticket.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="button11" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="My travels" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/My%20travels.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button111" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" onAction="#homecheckinLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Check-in" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-14.0">
+                           <image>
+                              <Image url="@../imagens/Check-in.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1111121" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="491.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Accessories" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                           <image>
+                              <Image url="@../imagens/Accessories.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button111111" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="405.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Configuration" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                           <image>
+                              <Image url="@../imagens/Configuration.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="209.0" layoutY="13.0" prefHeight="675.0" prefWidth="1146.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/Style.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="504.0" layoutX="37.0" layoutY="120.0" stroke="#a4a4a4" strokeType="INSIDE" width="1061.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebe4e4" height="74.0" layoutX="30.0" layoutY="55.0" stroke="#ebe4e4" strokeType="INSIDE" width="1076.0" />
+            <Label layoutX="40.0" layoutY="79.0" text="Departure" />
+            <Line endX="80.79998779296875" layoutX="563.0" layoutY="89.0" startX="-44.0" stroke="WHITE" />
+            <Circle fill="#ebe4e4" layoutX="518.0" layoutY="90.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#ebe4e4" layoutX="644.0" layoutY="90.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+            <Text fx:id="originAirportText" layoutX="114.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aeroporto Internacional de Fortaleza - Pinto Martins" textAlignment="CENTER" wrappingWidth="383.0000000000002">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="686.0" layoutY="79.0" prefHeight="17.0" prefWidth="44.0" text="Arrival" />
+            <Text fx:id="destinationAirportText" layoutX="727.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aeroporto Internacional do Rio de Janeiro Galeão" textAlignment="CENTER" wrappingWidth="383.0000000000002">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </Text>
+            <Label layoutX="55.0" layoutY="190.0" text="Name:" />
+            <Text fx:id="seat1Text" fill="#036f21" layoutX="54.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A4" wrappingWidth="233.60003662109352">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="seatType1Text" fill="#036f21" layoutX="94.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP" wrappingWidth="125.79998779296898">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="seat1TextField" layoutX="97.0" layoutY="187.0" prefHeight="25.0" prefWidth="358.0" promptText="Passenger full name" />
+            <Label layoutX="471.0" layoutY="191.0" text="CPF:" />
+            <TextField fx:id="cpf1TextField" layoutX="497.0" layoutY="187.0" prefHeight="25.0" prefWidth="166.0" promptText="Enter CPF" />
+            <Separator layoutX="43.0" layoutY="225.0" prefHeight="19.0" prefWidth="632.0" />
+            <Label layoutX="55.0" layoutY="282.0" text="Name:" />
+            <Text fx:id="seat2Text" fill="#036f21" layoutX="54.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A4" wrappingWidth="233.60003662109352">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="seatType2Text" fill="#036f21" layoutX="94.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP" wrappingWidth="125.79998779296898">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="seat2TextField" layoutX="97.0" layoutY="279.0" prefHeight="25.0" prefWidth="358.0" promptText="Passenger full name" />
+            <Label layoutX="471.0" layoutY="283.0" text="CPF:" />
+            <TextField fx:id="cpf2TextField" layoutX="497.0" layoutY="279.0" prefHeight="25.0" prefWidth="166.0" promptText="Enter CPF" />
+            <Separator layoutX="47.0" layoutY="314.0" prefHeight="19.0" prefWidth="632.0" />
+            <Label layoutX="57.0" layoutY="370.0" text="Name:" />
+            <Text fx:id="seat3Text" fill="#036f21" layoutX="54.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A4" wrappingWidth="233.60003662109352">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="seatType3Text" fill="#036f21" layoutX="94.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP" wrappingWidth="125.79998779296898">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="seat3TextField" layoutX="99.0" layoutY="367.0" prefHeight="25.0" prefWidth="358.0" promptText="Passenger full name" />
+            <Label layoutX="473.0" layoutY="371.0" text="CPF:" />
+            <TextField fx:id="cpf3TextField" layoutX="499.0" layoutY="367.0" prefHeight="25.0" prefWidth="166.0" promptText="Enter CPF" />
+            <Separator layoutX="53.0" layoutY="399.0" prefHeight="19.0" prefWidth="632.0" />
+            <Label layoutX="208.0" layoutY="447.0" text="Name on card:" />
+            <TextField layoutX="315.0" layoutY="443.0" prefHeight="25.0" prefWidth="315.0" />
+            <Label layoutX="207.0" layoutY="482.0" text="Card number:" />
+            <TextField layoutX="316.0" layoutY="478.0" prefHeight="25.0" prefWidth="315.0" />
+            <Label layoutX="207.0" layoutY="518.0" text="Expiration date:" />
+            <TextField layoutX="317.0" layoutY="514.0" prefHeight="25.0" prefWidth="166.0" />
+            <Label layoutX="492.0" layoutY="520.0" text="CVV:" />
+            <TextField layoutX="522.0" layoutY="515.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="91.0" layoutY="430.0" text="Card data">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="99.0" fitWidth="108.0" layoutX="76.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/cartao-de-credito.png" />
+               </image></ImageView>
+            <Separator layoutX="721.0" layoutY="137.0" orientation="VERTICAL" prefHeight="476.0" prefWidth="9.0" />
+            <Button fx:id="cancelButton" layoutX="835.0" layoutY="516.0" mnemonicParsing="false" onAction="#cancelPayment" prefHeight="63.0" prefWidth="195.0" styleClass="buttonCadExcluir" stylesheets="@../StyleSheets/Style.css" text="Cancel purchase" />
+            <Text fx:id="totalPriceText" fill="#ff9501" layoutX="840.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.800">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="57.0" />
+               </font>
+            </Text>
+            <Label layoutX="801.0" layoutY="219.0" prefHeight="46.0" prefWidth="44.0" text="R$" textFill="#d3c262">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="866.0" layoutY="145.0" text="Total Price">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="milesButton" layoutX="835.0" layoutY="413.0" mnemonicParsing="false" onAction="#milesPayment" prefHeight="63.0" prefWidth="195.0" styleClass="buttonCadSalvar" stylesheets="@../StyleSheets/Style.css" text="Pay In miles" />
+            <Label layoutX="882.0" layoutY="361.0" text="Earn Miles">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="933.0" layoutY="360.0" prefHeight="18.0" prefWidth="28.0" text="+ " textFill="#d3c262" />
+            <Button fx:id="cardButton" layoutX="835.0" layoutY="297.0" mnemonicParsing="false" onAction="#cardPayment" prefHeight="63.0" prefWidth="195.0" styleClass="buttonCadSalvar" stylesheets="@../StyleSheets/Style.css" text="Pay By Card" />
+            <Label fx:id="milesValueLabel" layoutX="947.0" layoutY="360.0" prefHeight="19.0" prefWidth="73.0" textFill="#5cee07">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="902.0" text="My Wallet">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="902.0" layoutY="14.0" prefHeight="43.0" prefWidth="71.0" text="Miles" textFill="#d3c262">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Text fx:id="myMilesText" fill="#ff9501" layoutX="973.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.800" wrappingWidth="165.6000000000002">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #EBE6E6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeCheckinController">
+   <children>
+      <AnchorPane prefHeight="721.0" prefWidth="200.0" style="-fx-background-color: #27124B; -fx-effect: dropshadow(gaussian, rgba(5, 0, 0, 5), 12, 0, 0, 5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox fx:id="home_side_menu" layoutY="67.0" prefHeight="700.0" prefWidth="200.0" spacing="20.0" style="-fx-padding: 10px;" stylesheets="@../StyleSheets/Style.css" AnchorPane.topAnchor="67.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true" translateX="18.0">
+                     <image>
+                        <Image url="@../imagens/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="buyTicketsButton" graphicTextGap="10.0" mnemonicParsing="false" onAction="#buyTicketsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Buy Ticket" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="41.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/Buy%20Ticket.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="button11" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" onAction="#myTravelsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="My travels" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/My%20travels.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button111" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonclickMenu" stylesheets="@../StyleSheets/Style.css" text="Check-in" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-14.0">
+                           <image>
+                              <Image url="@../imagens/Check-in.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button1111121" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="491.0" mnemonicParsing="false" onAction="#accessoriesLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Accessories" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                           <image>
+                              <Image url="@../imagens/Accessories.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button111111" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="405.0" mnemonicParsing="false" onAction="#configurationsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Configuration" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                           <image>
+                              <Image url="@../imagens/Configuration.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane prefHeight="153.0" prefWidth="180.0" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" stylesheets="@../StyleSheets/style.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/sair.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="232.0" layoutY="13.0" prefHeight="675.0" prefWidth="1097.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/Style.css">
+         <children>
+            <Button fx:id="loadCheckinButton" layoutX="333.0" layoutY="550.0" mnemonicParsing="false" onAction="#checkin" prefHeight="44.0" prefWidth="430.0" style="-fx-background-radius: 50; -fx-background-color: #ff9501; -fx-border-color: #000000; -fx-border-radius: 50;" text="Check-in">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="462.0" layoutY="25.0" text="Flight Check-in" textFill="#3b3c39">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="486.0" layoutY="70.0" text="Check-in in a few seconds" />
+            <Label layoutX="409.0" layoutY="91.0" text="select the desired flight and click on the Check-in button" />
+            <TableView fx:id="FlightsTable" layoutX="93.0" layoutY="129.0" onMouseClicked="#selectFlight" prefHeight="386.0" prefWidth="922.0" stylesheets="@../StyleSheets/style.css">
+               <columns>
+                  <TableColumn fx:id="IDColumn" minWidth="0.0" prefWidth="0.0" text="ID" />
+                  <TableColumn fx:id="OriginColumn" prefWidth="408.80003356933594" text="Origin" />
+                  <TableColumn fx:id="DestinationColumn" prefWidth="384.7999267578125" text="Destination" />
+                  <TableColumn fx:id="DateColumn" minWidth="0.0" prefWidth="73.60003662109375" text="Date" />
+                  <TableColumn fx:id="timeColumn" prefWidth="49.5999755859375" text="Time" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

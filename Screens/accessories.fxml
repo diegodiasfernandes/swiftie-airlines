@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #EBE6E6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AccessoriesController">
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="180.0" style="-fx-background-color: #27124B; -fx-effect: dropshadow(gaussian, rgba(5, 0, 0, 5), 12, 0, 0, 5);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox fx:id="home_side_menu" layoutY="67.0" prefHeight="700.0" prefWidth="200.0" spacing="20.0" style="-fx-padding: 10px;" stylesheets="@../StyleSheets/Style.css" AnchorPane.topAnchor="67.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true" translateX="18.0">
+                     <image>
+                        <Image url="@../imagens/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="buyTicketsButton" graphicTextGap="10.0" mnemonicParsing="false" onAction="#buyTicketsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Buy Ticket" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="41.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/Buy%20Ticket.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="button11" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" onAction="#myTravelsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="My travels" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                           <image>
+                              <Image url="@../imagens/My%20travels.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="checkinButton" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="213.0" mnemonicParsing="false" onAction="#homecheckinLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Check-in" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-14.0">
+                           <image>
+                              <Image url="@../imagens/Check-in.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="acessoriesButton" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="491.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" styleClass="buttonclickMenu" stylesheets="@../StyleSheets/Style.css" text="Accessories" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                           <image>
+                              <Image url="@../imagens/Accessories.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="configurationButton" alignment="CENTER" graphicTextGap="10.0" layoutX="20.0" layoutY="405.0" mnemonicParsing="false" onAction="#configurationsLoader" prefHeight="40.0" prefWidth="201.0" styleClass="buttonMenu" stylesheets="@../StyleSheets/Style.css" text="Configuration" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                           <image>
+                              <Image url="@../imagens/Configuration.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane prefHeight="153.0" prefWidth="180.0" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" stylesheets="@../StyleSheets/style.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/sair.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="232.0" layoutY="13.0" prefHeight="675.0" prefWidth="1118.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/Style.css">
+         <children>
+            <Label layoutX="434.0" layoutY="14.0" text="Accessories Catalog" textFill="#3b3c39">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="75.0" text="Luggage" textFill="#3b3c39">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Separator layoutX="333.0" layoutY="116.0" orientation="VERTICAL" prefHeight="532.0" prefWidth="3.0" />
+            <Label layoutX="490.0" layoutY="73.0" text="Hotels" textFill="#3b3c39">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="886.0" layoutY="71.0" text="Cars" textFill="#3b3c39">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Separator layoutX="722.0" layoutY="110.0" orientation="VERTICAL" prefHeight="532.0" prefWidth="3.0" />
+            <AnchorPane layoutX="362.0" layoutY="130.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="331.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/banner_hoteis-min.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="117.0" text="Rooms for couples starting at:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="231.0" layoutY="102.0" text="R$ 400" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="363.0" layoutY="303.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="331.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/nannai-resort-min.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="110.0" text="Individual rooms starting at:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="96.0" text="R$ 200" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="362.0" layoutY="481.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="332.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Ohla-Hotel.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="230.0" layoutY="100.0" text="R$ 260" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="112.0" prefHeight="20.0" prefWidth="181.0" text="Balcony rooms starting at:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="745.0" layoutY="128.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="254.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/profile-097.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="238.0" layoutY="11.0" text="R$ 200" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="239.0" layoutY="3.0" prefHeight="20.0" prefWidth="82.0" text="Daily Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="72.0" prefHeight="20.0" prefWidth="61.0" text="JEEP">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="746.0" layoutY="301.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="244.0" layoutX="-1.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/chevrolet-prisma-2019.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="243.0" layoutY="12.0" text="R$ 150" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="250.0" layoutY="74.0" prefHeight="43.0" prefWidth="90.0" text="Prisma">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="243.0" layoutY="4.0" prefHeight="20.0" prefWidth="82.0" text="Daily Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="745.0" layoutY="479.0" prefHeight="144.0" prefWidth="340.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="235.0" layoutX="5.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/consorcio-honda.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="241.0" layoutY="24.0" text="R$ 100" textFill="#1a9000">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="63.0" prefHeight="43.0" prefWidth="90.0" text="Ronda">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="240.0" layoutY="14.0" prefHeight="20.0" prefWidth="82.0" text="Daily Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="19.0" layoutY="125.0" prefHeight="137.0" prefWidth="300.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="279.0" layoutX="10.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/mala01.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="112.0" layoutY="6.0" text="Personal Baggage" />
+                  <Label layoutX="237.0" layoutY="15.0" text="R$ 200" textFill="#1a9000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="19.0" layoutY="294.0" prefHeight="161.0" prefWidth="300.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="251.0" layoutX="26.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/mala02.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="112.0" layoutY="6.0" text="Hand Baggage" />
+                  <Label layoutX="239.0" layoutY="23.0" text="R$ 300" textFill="#1a9000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="17.0" layoutY="488.0" prefHeight="137.0" prefWidth="306.0" style="-fx-background-color: #fff;" styleClass="blocoCad" stylesheets="@../StyleSheets/style.css">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="286.0" layoutX="5.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/mala03.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="105.0" layoutY="6.0" text="Checked Baggage" />
+                  <Label layoutX="240.0" layoutY="13.0" text="R$ 500" textFill="#1a9000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
