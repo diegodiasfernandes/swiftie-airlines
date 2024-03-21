@@ -10,6 +10,14 @@ You will have to install this version of javafx, other than that you should be o
 javafx-sdk-21.0.2
 ```
 
+## Some Interesting Info
+### Airports Data
+This system have a txt file including every brazilian airport! 
+Each line has: [airport name] / [city], (State)
+
+![image](https://github.com/diegodiasfernandes/swiftie-airlines/assets/116195231/e51f1116-df72-4177-b050-f1cf860b493e)
+
+
 ## Interface Guide
 
 ### Accessing User Interface
